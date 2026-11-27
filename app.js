@@ -4,17 +4,11 @@ var content = [
         description: "Sección Mix con OptiCraft Java y GTA 5",
         items: [
             {
-                name: "OptiCraft: JAVA",
-                tag: "JAVA",
+                name: "GTA VI port",
+                tag: "PROXIMAMENTE",
                 link: "https://gofile.io/d/a7fe4538-93ca-46ae-be94-41e40ce3afe3",
                 buttonText: "Descargar Java Launcher"
             },
-            {
-                name: "GTA: V",
-                tag: "64 BITS",
-                link: "https://gofile.io/d/a3db758e-ee45-426a-9e33-af38cb4b4dfc",
-                buttonText: "Descargar"
-            }
         ]
     },
     {
