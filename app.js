@@ -5,9 +5,9 @@ var content = [
         items: [
             {
                 name: "GTA VI port",
-                tag: "PROXIMAMENTE",
+                tag: "EXPERIMENTAL",
                 link: "",
-                buttonText: "EN PROCESO"
+                buttonText: "Descargar GTA VI port"
             }
         ]
     },
