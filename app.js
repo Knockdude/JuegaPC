@@ -8,8 +8,8 @@ var content = [
                 tag: "EXPERIMENTAL",
                 downloads: [
                     {
-                        text: "NO DISPONIBLE",
-                        link: ""
+                        text: "DESCARGAR GTA VI",
+                        link: "https://github.com/Knockdude/Leonida-X"
                     }
                 ]
             },
