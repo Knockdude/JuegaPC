@@ -1,14 +1,14 @@
 var content = [
     {
         title: "Mix",
-        description: "Sección Mix con OptiCraft Java y GTA 5",
+        description: "GTA VI port",
         items: [
             {
                 name: "GTA VI port",
                 tag: "PROXIMAMENTE",
-                link: "https://gofile.io/d/a7fe4538-93ca-46ae-be94-41e40ce3afe3",
-                buttonText: "Descargar Java Launcher"
-            },
+                link: "",
+                buttonText: "EN PROCESO"
+            }
         ]
     },
     {
@@ -16,17 +16,13 @@ var content = [
         description: "Juegos y aplicaciones para celulares",
         items: [
             {
-                name: "LiteCraft PE",
-                tag: "ANDROID",
+                name: "GTA VI Mobile",
+                tag: "PROXIMAMENTE EN ANDROID",
                 downloads: [
                     {
-                        text: "Descargar LiteCraft PE móvil",
+                        text: "NO DISPONIBLE",
                         link: ""
                     },
-                    {
-                        text: "Descargar LiteCraft PE PC",
-                        link: ""
-                    }
                 ]
             }
         ]
@@ -38,7 +34,7 @@ var categoryContainer = document.querySelector("ul.categories");
 var itemContainer = document.querySelector("ul.items");
 var buttonContainer = document.querySelector("div.downloadButtons");
 var downloadsContainer = document.querySelector("section.downloads");
-var categoryDescription = document.querySelector(".boxTitle span");
+var categoryDescription = document.querySelector(".list .boxTitle span");
 var searchBox = document.getElementById("optiSearch");
 
 var currentCategory;
@@ -77,7 +73,7 @@ function changeCategory(idx) {
         li.classList.toggle("selected", i === idx);
     });
 
-    categoryDescription.textContent = content[idx].description;
+    categoryDescription.textContent = content[idx].title;
 
     downloadsContainer.style.display = "";
     buttonContainer.innerHTML = "";
@@ -224,8 +220,6 @@ function search(query) {
     Array.from(categoryContainer.children).forEach(function(li) {
         li.classList.remove("selected");
     });
-
-    downloadsContainer.style.display = "";
 
     categoryDescription.textContent = filtered.length
         ? "Resultados de búsqueda"
