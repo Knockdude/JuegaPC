@@ -6,7 +6,7 @@ var content = [
             {
                 name: "GTA VI port",
                 tag: "EXPERIMENTAL",
-                link: "",
+                link: "https://github.com/Knockdude/Leonida-X",
                 buttonText: "Descargar GTA VI port"
             }
         ]
