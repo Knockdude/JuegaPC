@@ -178,22 +178,16 @@ function createItems(items) {
     itemContainer.appendChild(fragment);
 }
 
-function selectItem(item, idx) {
-    if (
-        !item ||
-        idx < 0 ||
-        idx >= renderedItems.length ||
-        !buttonContainer
-    ) {
-        return;
-    }
 
+function selectItem(item, idx) {
+    if (!item || !buttonContainer) return;
     if (idx === selectedItem) return;
 
     buttonContainer.innerHTML = "";
 
     if (downloadsContainer) {
         downloadsContainer.style.display = "";
+        downloadsContainer.innerHTML = "";
     }
 
     if (selectedItem !== undefined && renderedElements[selectedItem]) {
@@ -204,6 +198,7 @@ function selectItem(item, idx) {
         renderedElements[idx].classList.add("selected");
     }
 
+    // Botón principal
     if (item.link) {
         var btn = document.createElement("a");
 
@@ -214,48 +209,32 @@ function selectItem(item, idx) {
         btn.style.cursor = "pointer";
 
         buttonContainer.appendChild(btn);
-    } else if (item.downloads && item.downloads.length) {
+    } else {
         var placeholder = document.createElement("a");
 
         placeholder.className = "placeholder";
         placeholder.textContent = "Selecciona una opción de abajo";
 
         buttonContainer.appendChild(placeholder);
-    } else {
-        var placeholder = document.createElement("a");
-
-        placeholder.className = "placeholder";
-        placeholder.textContent = "NO DISPONIBLE";
-
-        buttonContainer.appendChild(placeholder);
     }
 
-    if (downloadsContainer) {
-        downloadsContainer.innerHTML = "";
+    // Descargas adicionales
+    if (downloadsContainer && item.downloads && item.downloads.length) {
+        item.downloads.forEach(function(download) {
+            var downloadButton = document.createElement("a");
 
-        if (item.downloads && item.downloads.length) {
-            item.downloads.forEach(function(download) {
-                var downloadButton = document.createElement("a");
+            downloadButton.textContent = download.text || "Descargar";
 
-                downloadButton.textContent = download.text || "Descargar";
+            if (download.link) {
+                downloadButton.href = download.link;
+                downloadButton.target = "_blank";
+                downloadButton.rel = "noopener noreferrer";
+            } else {
+                downloadButton.className = "placeholder";
+            }
 
-                if (download.link) {
-                    downloadButton.href = download.link;
-                    downloadButton.target = "_blank";
-                    downloadButton.rel = "noopener noreferrer";
-                } else {
-                    downloadButton.className = "placeholder";
-                    downloadButton.removeAttribute("href");
-                    downloadButton.style.pointerEvents = "none";
-                }
-
-                downloadsContainer.appendChild(downloadButton);
-            });
-
-            downloadsContainer.style.display = "";
-        } else {
-            downloadsContainer.style.display = "none";
-        }
+            downloadsContainer.appendChild(downloadButton);
+        });
     }
 
     selectedItem = idx;
