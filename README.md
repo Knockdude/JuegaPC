@@ -1,3 +1,2 @@
-PIRATERIA A LA PIRATERIA
-(código fuente completo y si quieres, lo tomas y lo modificas we, es bien entretenido we)
+Este sitio web funciona para que puedas probar los port de tus juegos favoritos :)
 web: https://knockdude.github.io/OptiProyects/
