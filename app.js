@@ -62,8 +62,8 @@ var content = [
         ]
     },
     {
-        title: "GTA VI",
-        description: "GTA VI PORTS",
+        title: "Ports",
+        description: "Porteos uwu",
         items: [
             {
                                 name: "GTA VI port",
