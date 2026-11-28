@@ -362,6 +362,6 @@ var dmcaLink = document.getElementById("dmcaLink");
 if (dmcaLink) {
     dmcaLink.addEventListener("click", function(e) {
         e.preventDefault();
-        alert("DMCA: consultasopti@gmail.com");
+        alert("DMCA: mrpaltamovie@gmail.com");
     });
 }
