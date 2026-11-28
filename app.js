@@ -42,6 +42,16 @@ var content = [
                         link: "https://wasmarcade.com/gta-5"
                     }
                 ]
+            },
+            {
+                name: "Monster Games",
+                tag: "Web Games",
+                downloads: [
+                    {
+                        text: "Entrar a Monster Games",
+                        link: "https://knockdude.github.io/Monster-Games/"
+                    }
+                ]
             }
         ]
     },
