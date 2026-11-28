@@ -24,16 +24,6 @@ var content = [
                 ]
             },
             {
-                name: "GTA VI ps3",
-                tag: "PROXIMAMENTE PARA PS3",
-                downloads: [
-                    {
-                        text: "NO DISPONIBLE (por ahora)",
-                        link: ""
-                    }
-                ]
-            },
-            {
                 name: "GTA VI PS4",
                 tag: "PROXIMAMENTE PARA PS4",
                 downloads: [
