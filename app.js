@@ -34,8 +34,8 @@ var content = [
                 ]
             },
             {
-                name: "GTA webassembly",
-                tag: "GTA WEBASSEMBLY NO MIO",
+                name: "GTA V webassembly",
+                tag: "GTA V WEBASSEMBLY NO MIO",
                 downloads: [
                     {
                         text: "JUGAR WEBASSEMBLY",
