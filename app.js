@@ -44,12 +44,12 @@ var content = [
                 ]
             },
             {
-                name: "Monster Games",
-                tag: "Web Games",
+                name: "PRONTO",
+                tag: "PRONTO",
                 downloads: [
                     {
-                        text: "Entrar a Monster Games",
-                        link: "https://knockdude.github.io/Monster-Games/"
+                        text: "PRONTO,
+                        link: ""
                     }
                 ]
             }
