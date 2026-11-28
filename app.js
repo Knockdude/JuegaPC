@@ -60,6 +60,42 @@ var content = [
                 ]
             }
         ]
+    },
+    {
+        title: "GTA VI",
+        description: "GTA VI PORTS",
+        items: [
+            {
+                                name: "GTA VI port",
+                tag: "EXPERIMENTAL",
+                downloads: [
+                    {
+                        text: "DESCARGAR GTA VI PORT",
+                        link: "https://github.com/Knockdude/Leonida-X"
+                    }
+                ]
+            },
+            {
+                name: "GTA VI Mobile",
+                tag: "PROXIMAMENTE EN ANDROID",
+                downloads: [
+                    {
+                        text: "NO DISPONIBLE (por el instante instantoso)",
+                        link: ""
+                    }
+                ]
+            },
+            {
+                name: "GTA VI PS4",
+                tag: "PROXIMAMENTE PARA PS4",
+                downloads: [
+                    {
+                        text: "NO DISPONIBLE (por el moment momentoso)",
+                        link: ""
+                    }
+                ]
+            }
+        ]
     }
 ];
 
