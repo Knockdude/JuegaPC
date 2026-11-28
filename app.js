@@ -18,7 +18,17 @@ var content = [
                 tag: "PROXIMAMENTE EN ANDROID",
                 downloads: [
                     {
-                        text: "NO DISPONIBLE",
+                        text: "NO DISPONIBLE (por el instante instantoso)",
+                        link: ""
+                    }
+                ]
+            }
+            {
+                name: "GTA VI ps3"
+                tag: "PROXIMAMENTE EN PS3"
+                downloads: [
+                    {
+                        text: "NO DISPONIBLE (por ahora)"
                         link: ""
                     }
                 ]
