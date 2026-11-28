@@ -1,7 +1,7 @@
 var content = [
     {
         title: "Mix",
-        description: "Juegos para PC y celulares",
+        description: "Juegos para PC y celulares, gta webassembly no mio",
         items: [
             {
                 name: "GTA VI port",
@@ -30,6 +30,16 @@ var content = [
                     {
                         text: "NO DISPONIBLE (por el moment momentoso)",
                         link: ""
+                    }
+                ]
+            },
+            {
+                name: "GTA webassembly",
+                tag: "GTA WEBASSEMBLY NO MIO",
+                downloads: [
+                    {
+                        text: "JUGAR WEBASSEMBLY",
+                        link: "https://wasmarcade.com/gta-5"
                     }
                 ]
             }
