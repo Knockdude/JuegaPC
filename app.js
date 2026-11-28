@@ -42,16 +42,6 @@ var content = [
                         link: "https://wasmarcade.com/gta-5"
                     }
                 ]
-            },
-            {
-                name: "PRONTO",
-                tag: "PRONTO",
-                downloads: [
-                    {
-                        text: "PRONTO,
-                        link: ""
-                    }
-                ]
             }
         ]
     },
